@@ -9,5 +9,17 @@
 <body>
     <h1>YOOOO</h1>
     <p>we are in a1 html file</p>
+    {% if number == 10 %}
+    <p>{{ message }}</p>
+    {% elif number > 10 %}
+    wrifd
+    {% endif %}
+    <ol>
+        {% for i in product %}
+        <li>
+           <a href="/home/{{i.id}}"> Roll no: {{i.id}}----------------- Name: {{i.name}} </a>
+        </li>
+        {% endfor %}
+    </ol>
 </body>
 </html>
