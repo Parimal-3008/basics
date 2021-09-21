@@ -17,7 +17,7 @@
     <ol>
         {% for i in product %}
         <li>
-           <a href="/home/{{i.id}}"> Roll no: {{i.id}}----------------- Name: {{i.name}} </a>
+           <a href="{% url 'home_variable' i.id %}"> Roll no: {{i.id}}----------------- Name: {{i.name}} </a>
         </li>
         {% endfor %}
     </ol>
